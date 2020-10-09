@@ -18,19 +18,28 @@ function Landing() {
             </div>
             <div className="menClothesImg">
                 <div>
-                        <h1> Classic Urbain</h1>
-                        <h2>la nouvelle collection est arrivée !</h2>
-                        <p> Voir</p>
+                    <h1> Classic Urbain</h1>
+                    <h2>la nouvelle collection homme est arrivée !</h2>
+                    <p> Voir</p>
                 </div>
             </div>
-            <div className="bijoux">
-                <h1> Bling Bling</h1>
-                <h2>Remarquable en indiscretion</h2>
-                <p> Shopping</p>
+            <div className="bijouxCont">
+                <div className="bijouxLayer">
+                    <div className="bijoux">
+                        <div className="bijouxTxt">
+                            <div>
+                                <h1> Bling Bling</h1>
+                                <h2>Remarquable indiscretion</h2>
+                                <p> Shopping</p>
+                            </div>
+                        </div>
+                        <div className="bijouxImg">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="bijouxImg">
 
-            </div>
+
             <div className="it">
                 <h1>L'ère Technologique</h1>
                 <h2>le meilleur du High-Tech</h2>
