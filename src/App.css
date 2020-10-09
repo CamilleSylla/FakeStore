@@ -225,26 +225,35 @@
   grid-column: 2 ;
   grid-row: 3;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
   background-image: url(./assets/img/IT.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+ 
+  
 }
-
-.itImg {
-  grid-column: 1;
-  grid-row: 4;
-  background-image: url(./assets/img/IT.jpg);
-  background-size: cover;
-  background-position: 0% 20%;
-  width: 80%;
-  border: 3px solid white;
-  box-shadow: 15px 20px blue;
-
+.it .itLayer {
+  background-color: rgba(128, 0, 128, 0.9);
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
+.itLayer div div{
+border: 10px solid white;
+height: 50%;
+font-size: 20px;
+transition: all 0.3s ease-out;
+}
+.itLayer div div:hover{
+  border: 10px solid grey;
+  color: grey;
+  cursor: pointer;
+  height: 50%;
+  font-size: 20px;
+  }
 /* Product Displayer Container */
 
 .product {

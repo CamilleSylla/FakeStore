@@ -41,11 +41,16 @@ function Landing() {
 
 
             <div className="it">
-                <h1>L'ère Technologique</h1>
-                <h2>le meilleur du High-Tech</h2>
-                <p> Shopping</p>
-            </div>
-            <div className="itImg">
+                <div className="itLayer">
+                    <div>
+                        <h1>L'ère Technologique</h1>
+                        <h2>le meilleur du High-Tech</h2>
+                        <div>
+                            <p>Connection</p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
