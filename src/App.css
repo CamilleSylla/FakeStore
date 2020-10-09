@@ -2,6 +2,110 @@
   text-align: center;
 }
 
+/* top navbar*/
+.topNav {
+  position: fixed;
+  width: 100%;
+}
+.topNav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.topNav li{
+  float: left;
+}
+.topNav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.topNav li a:hover {
+  background-color: #111;
+}
+
+/* Banniere*/
+
+.banniere {
+  height: 500px;
+  background-image: url(./assets/img/banniere.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* landing page*/
+
+.landing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(400px, auto);
+}
+
+.womenClothes {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+}
+
+.womenClothesImg {
+  grid-column: 2;
+  grid-row: 1;
+  background-image: url(./assets/img/women.jpg);
+  background-size: cover;
+}
+
+.menClothes {
+  grid-column: 2;
+  grid-row: 2;
+  height: 400px;
+  text-align: right;
+}
+
+.menClothesImg {
+  grid-column: 1;
+  grid-row: 2;
+  background-image: url(./assets/img/Men.jpg);
+  background-size: cover;
+}
+.bijoux {
+  grid-column: 1;
+  grid-row: 3;
+  height: 400px;
+  text-align: left;
+}
+
+.bijouxImg {
+  grid-column: 2;
+  grid-row: 3;
+  background-image: url(./assets/img/bijoux.jpg);
+  background-size: cover;
+  background-position: 0% 35%;
+}
+.it {
+  grid-column: 2;
+  grid-row: 4;
+  height: 400px;
+  text-align: right;
+}
+
+.itImg {
+  grid-column: 1;
+  grid-row: 4;
+  background-image: url(./assets/img/IT.jpg);
+  background-size: cover;
+  background-position: 0% 20%;
+}
+/* Product Displayer Container */
+
+.product {
+  margin: 10%;
+}
+
 /* Item Displayer*/
 
 .item {
@@ -9,9 +113,25 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 5%;
+  text-align: left;
+}
+.itemCont{
+  padding: 10px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  border: 2px solid transparent
+}
+.itemCont:hover{
+  border: 2px solid grey
 }
 .itemCont img{
   height: 200px;
   width: 100%;
   object-fit: contain;
+}
+.itemCont h2 {
+  font-size: small;
+}
+.itemCont p{
+  font-size: small;
 }
