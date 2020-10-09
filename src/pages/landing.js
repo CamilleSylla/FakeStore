@@ -13,14 +13,14 @@ function Landing() {
                 <div>
                     <h1> Womenizer</h1>
                     <h2> Soyez la tendance</h2>
-                    <p> Shopping</p>
+                    <p> Showroom</p>
                 </div>
             </div>
             <div className="menClothesImg">
                 <div>
-                    <h1> Classic Urbain</h1>
-                    <h2>la nouvelle collection est arrivée !</h2>
-                    <p> Shopping</p>
+                        <h1> Classic Urbain</h1>
+                        <h2>la nouvelle collection est arrivée !</h2>
+                        <p> Voir</p>
                 </div>
             </div>
             <div className="bijoux">
