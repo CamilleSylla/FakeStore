@@ -19,11 +19,13 @@ class Product extends React.Component {
             const { id, title, price, category, image } = item;
 
             return (
-                <div className="itemCont">
-                    <img src={image} />
-                    <h2>{title}</h2>
-                    <p>{price}€</p>
-                    <p>{category}</p>
+                <div className="product">
+                    <div className="itemCont">
+                        <img src={image} />
+                        <h2>{title}</h2>
+                        <p>{price}€</p>
+                        <p>{category}</p>
+                    </div>
                 </div>
             )
         })

@@ -36,6 +36,7 @@
   background-image: url(./assets/img/banniere.jpg);
   background-size: cover;
   background-position: center;
+  margin-bottom: 75px;
 }
 
 /* landing page*/
@@ -47,9 +48,46 @@
 }
 
 .womenClothes {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.womenClothes div h1{
+  letter-spacing: 0.4em;
+  font-size: 40px;
+  background: -webkit-linear-gradient(left, #27bcdd 0%,#27bcdd 50%,#ecb800 50%,#ecb800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.womenClothes div h2{
+  letter-spacing: 0.6em;
+  background: -webkit-linear-gradient(left,#27bcdd 0%,#27bcdd 50%,#ecb800 50%,#ecb800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.womenClothes div p{
+  color: #27bcdd;
+  background-color: #ecb800;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 5px solid #27bcdd;
+  box-shadow: 15px 15px #27bcdd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.womenClothes div p:hover{
+  box-shadow: 10px 10px #27bcdd;
+}
+.womenColor {
   grid-column: 1;
   grid-row: 1;
-  text-align: left;
+  background-color: #ecb800;
 }
 
 .womenClothesImg {
@@ -59,18 +97,18 @@
   background-size: cover;
 }
 
-.menClothes {
-  grid-column: 2;
-  grid-row: 2;
-  height: 400px;
-  text-align: right;
-}
+
 
 .menClothesImg {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
+  height: 500px;
   background-image: url(./assets/img/Men.jpg);
   background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bijoux {
   grid-column: 1;
@@ -85,6 +123,9 @@
   background-image: url(./assets/img/bijoux.jpg);
   background-size: cover;
   background-position: 0% 35%;
+  width: 80%;
+  border: 3px solid white;
+  box-shadow: 15px 20px blue;
 }
 .it {
   grid-column: 2;
@@ -99,6 +140,10 @@
   background-image: url(./assets/img/IT.jpg);
   background-size: cover;
   background-position: 0% 20%;
+  width: 80%;
+  border: 3px solid white;
+  box-shadow: 15px 20px blue;
+
 }
 /* Product Displayer Container */
 
