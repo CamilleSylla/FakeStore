@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../App';
+import FilterNav from '../component/filterNav';
 
 
 class Product extends React.Component {
@@ -20,6 +21,7 @@ class Product extends React.Component {
 
             return (
                 <div className="product">
+
                     <div className="itemCont">
                         <img src={image} />
                         <h2>{title}</h2>
@@ -35,7 +37,13 @@ class Product extends React.Component {
 
         return (
             <div className="item">
-                {this.renderData()}
+                <div className="filterCont">
+                        <FilterNav />
+                    </div>
+                    <div className="displayer">
+                        {this.renderData()}
+                    </div>
+                
             </div>
         )
     }

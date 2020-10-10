@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .App {
   text-align: center;
+  
 }
 
 /* top navbar*/
@@ -36,6 +39,36 @@
   background-image: url(./assets/img/banniere.jpg);
   background-size: cover;
   background-position: center;
+}
+.banniere .banLayer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 37, 79, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.banGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+}
+.banTitle {
+  grid-column: 1;
+  text-align: left;
+  color: #ecb800;
+  font-family: 'Bebas Neue', cursive;
+}
+.banTitle h1 {
+  letter-spacing: 0.4em;
+  font-size: 5em;
+}
+.banTitle h2 {
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+.banLogo {
+  grid-column: 2;
 }
 
 /* landing page*/
@@ -134,8 +167,6 @@
 }
 .menClothesImg div h1{
   letter-spacing: 0.4em;
-}
-.menClothesImg div h2{
 }
 .menClothesImg div p:hover{
   color: #5d5d5d;
@@ -268,6 +299,12 @@ transition: all 0.3s ease-out;
   grid-template-rows: auto;
   gap: 5%;
   text-align: left;
+}
+.displayer {
+  grid-column: 2/ span 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
 }
 .itemCont{
   padding: 10px;

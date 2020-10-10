@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Landing() {
 
@@ -13,14 +14,18 @@ function Landing() {
                 <div>
                     <h1> Womenizer</h1>
                     <h2> Soyez la tendance</h2>
-                    <p> Showroom</p>
+                    <Link to='/Shop' style={{ textDecoration: 'none'}}>
+                        <p> Showroom</p>
+                    </Link>
                 </div>
             </div>
             <div className="menClothesImg">
                 <div>
                     <h1> Classic Urbain</h1>
                     <h2>la nouvelle collection homme est arrivée !</h2>
-                    <p> Voir</p>
+                    <Link to='/Shop' style={{ textDecoration: 'none'}}>
+                        <p> Voir</p>
+                    </Link>
                 </div>
             </div>
             <div className="bijouxCont">

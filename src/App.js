@@ -11,6 +11,18 @@ function App() {
   return (
     <div className="App">
       <div className="banniere">
+        <div className="banLayer">
+          <div className="banGrid">
+            <div className="banTitle">
+              <div>
+                <h1>IconicStore</h1>
+                <h2>Juste un site web e-commerce de demonstration</h2>
+              </div>
+            </div>
+            <div className="banLogo">
+            </div>
+          </div>
+        </div>
       </div>
       <Rooter>
         <Route path='/' exact component={Landing} />
