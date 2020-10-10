@@ -7,7 +7,8 @@ class Product extends React.Component {
     constructor() {
         super();
         this.state = {
-            item: []
+            item: [],
+            checked: [],
         }
     }
     componentDidMount() {
@@ -32,13 +33,17 @@ class Product extends React.Component {
             )
         })
     }
+    test(e) {
+        this.setState({checked: e});
+        console.log(this.state.checked);
+    }
 
     render() {
 
         return (
             <div className="item">
                 <div className="filterCont">
-                        <FilterNav />
+                        <FilterNav checked={this.test.bind(this)}/>
                     </div>
                     <div className="displayer">
                         {this.renderData()}
