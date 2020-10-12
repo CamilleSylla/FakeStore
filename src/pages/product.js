@@ -32,11 +32,8 @@ class Product extends React.Component {
 
             );
             return filtered;
+        }
     }
-}
-
-
-
     render() {
 
         const item = this.filtered()

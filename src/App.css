@@ -340,3 +340,28 @@ transition: all 0.3s ease-out;
 .itemCont p{
   font-size: small;
 }
+
+/* Panier */
+
+.bracketCont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.itemPan {
+  text-align: left;
+  margin: 10%;
+}
+.connection {
+  display: flex;
+}
+.connection p:first-of-type {
+  margin-right: 10%;
+}
+.bill {
+  text-align: left;
+  margin: 10%;
+}
+.panDis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

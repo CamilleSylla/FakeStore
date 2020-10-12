@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import Product from './pages/product'
+import Product from './pages/product';
 import Landing from './pages/landing';
+import Panier from './pages/panier';
 
 import { BrowserRouter as Rooter, Route } from 'react-router-dom';
 
@@ -27,6 +28,7 @@ function App() {
       <Rooter>
         <Route path='/' exact component={Landing} />
         <Route path='/Shop' exact component={Product} />
+        <Route path='/Panier' exact component={Panier} />
       </Rooter>
     </div>
   );
