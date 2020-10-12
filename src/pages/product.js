@@ -20,22 +20,26 @@ class Product extends React.Component {
         this.setState({ checked: e });
     }
     filtered() {
-        const filtered = this.state.item.filter(item => {
-            if (this.state.checked === undefined || this.state.checked.length == 0) {
-                return item
-            } else {
-                return item.category == this.state.checked
+
+        if (this.state.checked.length <= 1) {
+            const filtered = this.state.item.filter(item => {
+                if (this.state.checked === undefined || this.state.checked.length == 0) {
+                    return item
+                } else if (this.state.checked === true || this.state.checked.length === 1) {
+                    return item.category == this.state.checked;
+                }
             }
 
-        })
-        return filtered
+            );
+            return filtered;
     }
+}
+
 
 
     render() {
 
         const item = this.filtered()
-        console.log(item);
 
         return (
             <div className="item">
@@ -43,7 +47,7 @@ class Product extends React.Component {
                     <FilterNav checked={this.test.bind(this)} />
                 </div>
                 <Item item={item} />
-                    
+
             </div>
         )
     }
@@ -63,12 +67,12 @@ class Item extends React.Component {
         return this.props.item.map((item, i) => {
             const { category, image, price, title } = item;
             return (
-                    <div className="itemCont">
-                        <img src={image} alt="item" />
-                        <h2>{title}</h2>
-                        <p>{price}€</p>
-                        <p>{category}</p>
-                    </div>
+                <div className="itemCont">
+                    <img src={image} alt="item" />
+                    <h2>{title}</h2>
+                    <p>{price}€</p>
+                    <p>{category}</p>
+                </div>
             )
         })
     }

@@ -45,7 +45,7 @@ function FilterNav(props) {
                     />
                 <label for="technologie">Technologie</label>
             </div>
-            <div onClick={test}> Appliquer filtre</div>
+            <div className="fltBtn" onClick={test}> Appliquer filtre</div>
         </div>
     )
 }

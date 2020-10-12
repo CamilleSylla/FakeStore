@@ -287,13 +287,26 @@ transition: all 0.3s ease-out;
   }
 /* Product Displayer Container */
 
-.product {
-  margin: 10%;
+.fltBtn {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.fltBtn:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 
 /* Item Displayer*/
 
 .item {
+  margin: 50px;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -303,6 +316,7 @@ transition: all 0.3s ease-out;
 .displayer {
   grid-column: 2/ span 3;
   display: grid;
+  gap: 5%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
