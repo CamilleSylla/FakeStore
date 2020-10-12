@@ -20,35 +20,32 @@ function FilterNav(props) {
             <div>
                 <input type="checkbox"
                     id="homme"
-                    value="homme"
-                    onChange={test} 
+                    value="men clothing"
                     />
                 <label for="homme">Homme</label>
             </div>
             <div>
                 <input type="checkbox"
                  id="femme" 
-                 value="femme"
-                 onChange={test} 
+                 value="women clothing"
                     />
                 <label for="femme">Femme</label>
             </div>
             <div>
                 <input type="checkbox"
                  id="bijoux" 
-                 value="bijoux"
-                 onChange={test} 
+                 value="jewelery"
                     />
                 <label for="bijoux">Bijoux</label>
             </div>
             <div>
                 <input type="checkbox" 
                 id="technologie"
-                value="technologie" 
-                onChange={test} 
+                value="electronics" 
                     />
                 <label for="technologie">Technologie</label>
             </div>
+            <div onClick={test}> Appliquer filtre</div>
         </div>
     )
 }
