@@ -31,7 +31,6 @@ class PanItem extends React.Component {
 
     render () {
 
-
         return (
             <div className="panDis">
                 <img src="" alt="Mes Articles"/>

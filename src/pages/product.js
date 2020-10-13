@@ -1,14 +1,14 @@
 import React from 'react';
-import data from '../App';
 import FilterNav from '../component/filterNav';
 
 
 class Product extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             item: [],
             checked: [],
+            clickedID: "",
         }
     }
     componentDidMount() {
@@ -16,9 +16,18 @@ class Product extends React.Component {
             .then(res => res.json())
             .then(item => this.setState({ item: item }))
     }
+
     test(e) {
         this.setState({ checked: e });
     }
+
+    handleClick(id){
+        this.setState({ clickedID: id });
+        this.props.itemId(this.state.clickedID)
+        console.log(this.state.clickedID);
+        console.log(this.props.itemId);
+    }
+
     filtered() {
 
         if (this.state.checked.length <= 1) {
@@ -37,13 +46,12 @@ class Product extends React.Component {
     render() {
 
         const item = this.filtered()
-
         return (
             <div className="item">
                 <div className="filterCont">
-                    <FilterNav checked={this.test.bind(this)} />
+                    <FilterNav  checked={this.test.bind(this)} />
                 </div>
-                <Item item={item} />
+                <Item click={this.handleClick.bind(this)} item={item} />
 
             </div>
         )
@@ -56,15 +64,17 @@ export default Product;
 class Item extends React.Component {
 
     componentDidUpdate(props, state, snapshot) {
-        console.log(props);
+        console.log(props.itemID);
 
 
     }
+    
     renderData() {
         return this.props.item.map((item, i) => {
-            const { category, image, price, title } = item;
+            const { id ,category, image, price, title } = item;
+            
             return (
-                <div className="itemCont">
+                <div className="itemCont" onClick={ () => this.props.click(id)}>
                     <img src={image} alt="item" />
                     <h2>{title}</h2>
                     <p>{price}€</p>
@@ -74,7 +84,6 @@ class Item extends React.Component {
         })
     }
     render() {
-
         return (
             <div className="displayer">
                 {this.renderData()}

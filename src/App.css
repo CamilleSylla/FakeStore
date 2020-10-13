@@ -365,3 +365,17 @@ transition: all 0.3s ease-out;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+/*Selected Item*/
+
+.itemDis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.itemDis img {
+  grid-column: 1 / span 3;
+}
+.itemDesc {
+  text-align: left;
+}
